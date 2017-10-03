@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="app" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turismo</title>
+    <base href="/">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-grid/ui-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-ui-select/dist/select.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-block-ui/dist/angular-block-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--
+        IE8 support, see AngularJS Internet Explorer Compatibility http://docs.angularjs.org/guide/ie
+        For Firefox 3.6, you will also need to include jQuery and ECMAScript 5 shim
+    -->
+    <!--[if lt IE 9]>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.2.0/es5-shim.js"></script>
+        <script>
+        document.createElement('ui-select');
+        document.createElement('ui-select-match');
+        document.createElement('ui-select-choices');
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="/">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/inicio">Home</a></li>
+                    <li><a href="/banco/">Banco</a></li>
+                    <li><a href="/view2">View 2</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <div ng-view></div>
+
+    <br>
+
+    <footer class="container-fluid text-center">
+        <p>Turismo</p>
+    </footer>
+
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+    <!--Librerias -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/csv/lib/csv.js"></script>
+    <script src="bower_components/pdfmake/build/pdfmake.js"></script>
+    <script src="bower_components/angular-block-ui/dist/angular-block-ui.js"></script>
+    <!--<script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>-->
+
+    <!--Aplicacion principal-->
+    <script src="js/app.js"></script>
+    <script src="js/app.filter.js"></script>
+    <script src="js/app.service.js"></script>
+    <!--componentes-->
+    <!--<script src="js/components/exception/exception.module.js"></script>
+    <script src="js/components/exception/exception-handler.provider.js"></script>
+    <script src="js/components/exception/exception.js"></script>
+    <script src="js/components/logger/logger.module.js"></script>
+    <script src="js/components/logger/logger.js"></script>
+    <script src="js/components/router/router.module.js"></script>
+    <script src="js/components/router/routehelper.js"></script>-->
+    <script src="js/components/version/version.js"></script>
+    <script src="js/components/version/version-directive.js"></script>
+    <script src="js/components/version/interpolate-filter.js"></script>
+    <!-- pagina principal-->
+    <script src="js/view/inicio/inicio.module.js"></script>
+    <script src="js/view/inicio/config/inicio.config.js"></script>
+    <script src="js/view/inicio/controllers/inicioCtrl.js"></script>
+    <script src="js/view/inicio/controllers/bannerCtrl.js"></script>
+    <script src="js/view/inicio/controllers/contenidoCtrl.js"></script>
+    <!--Bancos-->
+    <script src="js/view/banco/banco.module.js"></script>
+    <script src="js/view/banco/config/banco.config.js"></script>
+    <script src="js/view/banco/service/banco.service.js"></script>
+    <script src="js/view/banco/controllers/bancoIndexCtrl.js"></script>
+    <script src="js/view/banco/controllers/bancoDetailsCtrl.js"></script>
+
+
+</body>
+
+</html>

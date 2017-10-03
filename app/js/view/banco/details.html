@@ -1,0 +1,36 @@
+<div class="container text-center">
+
+    <h3>{{ title }}</h3><br>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            Codigo externo
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <input type="text" ng-model="banco.codigoexterno" class="text_control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            Nombre banco
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <input type="text" ng-model="banco.nombre" class="text_control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            Activo
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <input type="checkbox" ng-model="banco.activo" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <button type="button" ng-click="guardar()" class="boton">Aceptar</button>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <button type="button" ng-click="cancelar()" class="boton">Cancelar</button>
+        </div>
+    </div>
+</div>
